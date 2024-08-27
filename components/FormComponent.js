@@ -4,7 +4,7 @@ import { View, TextInput, Text, StyleSheet } from "react-native";
 const FormComponent = () => {
   const [name, setName] = useState("");
   const [idade, setIdade] = useState("");
-  const [sobrenome, setSobrenome] = useState("");
+  const [email, setEmail] = useState("");
 
   return (
     <View>
@@ -24,12 +24,12 @@ const FormComponent = () => {
         onChangeText={setIdade}
       />
 
-      <Text style={styles.text}>Seu sobrenome é {sobrenome}!</Text>
+      <Text style={styles.text}>Seu email é {email}!</Text>
       <TextInput
         style={styles.input}
         placeholder="Digite seu sobrenome"
-        value={sobrenome}
-        onChangeText={setSobrenome}
+        value={email}
+        onChangeText={setEmail}
       />
     </View>
   );
